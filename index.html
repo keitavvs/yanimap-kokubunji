@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>国分寺 喫煙できる飲食店マップ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #f4f8fc;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a5f, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 15px;
+      color: #f0d7b8;
+    }
+
+    section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 18px;
+    }
+
+    h2 {
+      border-left: 6px solid #3b82f6;
+      padding-left: 12px;
+      font-size: 22px;
+    }
+
+    .map-box {
+      background: white;
+      padding: 12px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    iframe {
+      width: 100%;
+      height: 480px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    .shop-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .shop-card {
+      background: white;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 4px 14px rgba(59,130,246,0.12);
+    }
+
+    .shop-card h3 {
+      margin-top: 0;
+      color: #111;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+.shop-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+   .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 4px 4px 8px 0;
+  border: 1px solid;
+}
+
+/* 席で喫煙OK */
+.seat-smoking {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+
+/* 紙タバコOK */
+.paper-smoking {
+  background: #ffedd5;
+  color: #c2410c;
+  border-color: #fed7aa;
+}
+
+/* 電子タバコOK */
+.vape-smoking {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+/* 分煙 */
+.separate-smoking {
+  background: #fef9c3;
+  color: #854d0e;
+  border-color: #fde68a;
+}
+
+/* 吸える席あり */
+.smoking-seat {
+  background: #dcfce7;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+    .notice {
+      background: #fff8e8;
+      border-left: 5px solid #d49a35;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .ad-box {
+      background: #e9e9e9;
+      color: #777;
+      text-align: center;
+      padding: 36px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 24px 12px;
+      font-size: 13px;
+    }
+
+    a {
+      color: #8b5a2b;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 38px 16px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      iframe {
+        height: 420px;
+      }
+    }
+.form-box {
+  background: white;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(59,130,246,0.12);
+  margin-top: 20px;
+}
+
+.form-box iframe {
+  width: 100%;
+  height: 800px;
+  border: 0;
+}
+
+.contact-btn {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <h1>【2026年最新版】国分寺で喫煙できる居酒屋マップ</h1>
+    <p>紙タバコ・電子タバコ・分煙のお店を探せるマップサイト</p>
+  </header>
+
+  <section>
+    <h2>喫煙できるお店マップ</h2>
+    <p>🔴 赤：席で喫煙OK 🟡 黄：分煙 🔵 青：外で喫煙可能</p>
+
+    <div class="map-box">
+  <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1ZA7UEuqNsA5sy7MwyfxmIX68ckGmdTw&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+  </section>
+
+  <section>
+    <h2>掲載店舗一覧</h2>
+
+    <div class="shop-list">
+
+
+
+
+      <div class="shop-card">
+  <h3>
+    <a href="https://maps.app.goo.gl/YL4aiYAMHY9XccVH8" target="_blank">
+      国分寺っ子居酒屋 燻し家もっくん
+    </a>
+  </h3>
+        <span class="tag seat-smoking">🚬 席で喫煙OK</span>
+        <span class="tag paper-smoking">紙タバコOK</span>
+       
+        <p>💰 約2,500円</p>
+        <p>🍻 ワイワイ系・学生多め</p>
+        <p>👉 安く飲みたい人向けの定番居酒屋。</p>
+      </div>
+
+
+
+      <div class="shop-card">
+        <h3>
+    <a href="https://maps.app.goo.gl/A1u4ShmGcd6dzSh16h" target="_blank">
+      平成第七酒場 梟 国分寺本店
+    </a>
+  </h3>
+        <span class="tag seat-smoking">🚬 席で喫煙OK</span>
+        <span class="tag paper-smoking">紙タバコOK</span>
+        
+        <p>💰 約3,000円</p>
+        <p>🍻 昭和レトロ系</p>
+        <p>👉 レトロな雰囲気で飲みたい人におすすめ。</p>
+      </div>
+
+
+
+      <div class="shop-card">
+         <h3>
+    <a href="https://maps.app.goo.gl/3fTPK4tb25WoPHDS7" target="_blank">
+      ウラニワ 国分寺店
+    </a>
+  </h3>
+        <span class="tag separate-smoking">🚬 分煙</span>
+        <span class="tag smoking-seat">吸える席あり</span>
+        <span class="tag paper-smoking">紙タバコOK</span>
+        <p>💰 約3,000円</p>
+        <p>🍴 大分料理</p>
+        <p>👉 とり天や大分料理が楽しめる居酒屋。</p>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  
+  <section>
+  <h2>掲載依頼・情報修正</h2>
+  <p>
+    掲載希望や喫煙情報の修正がある場合は、
+    下のフォームからご連絡ください。
+  </p>
+
+  <div class="form-box">
+    <a class="contact-btn"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSdPS0foyLcyDXH8UXk_7vUxzWiYap42IfzdBf9CJtOe0V-V-A/viewform?usp=header"
+       target="_blank">
+       掲載依頼フォームはこちら
+    </a>
+  </div>
+</section>
+  <footer>
+    <p>&copy; 2026 国分寺 喫煙できる飲食店マップ</p>
+  </footer>
+
+</body>
+</html>
